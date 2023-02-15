@@ -18,7 +18,7 @@ def calculate_arbitrage_opportunity(exchange, coin_pair, fees):
     ask_price = ticker['ask']
 
     # Calculate transaction fees and trading fees
-    transaction_fee = fees['transaction']
+    transaction_fee = fees.get('transaction', 0.0)
     trading_fee = (fees['maker'] + fees['taker']) / 2
     bid_price_with_fees = bid_price * (1 + trading_fee) + transaction_fee
     ask_price_with_fees = ask_price * (1 - trading_fee) - transaction_fee
