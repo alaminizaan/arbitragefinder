@@ -2,8 +2,8 @@ import ccxt
 import os
 from flask import Flask, jsonify
 
-exchanges = ['binance','bitfinex', 'bitstamp', 'huobipro', 'okex', 'bitmex', 'bittrex', 'poloniex', 'kucoin', 'gateio', 'ftx', 'deribit', 'bybit', 'phemex', 'mxc', 'hitbtc', 'bibox', 'bitmax']
-coins = ['BTC/USDT', 'ETH/USDT', 'ADA/USDT', 'SOL/USDT', 'DOT/USDT', 'DOGE/USDT', 'XRP/USDT', 'LUNA/USDT', 'AVAX/USDT', 'MATIC/USDT', 'SUSHI/USDT', 'LINK/USDT', 'CRV/USDT', 'AAVE/USDT', 'CAKE/USDT', 'GRT/USDT', 'ALGO/USDT', 'SNX/USDT', 'XTZ/USDT', 'REN/USDT', 'ATOM/USDT', 'RUNE/USDT', 'KSM/USDT', 'FIL/USDT', 'ANKR/USDT', 'KAVA/USDT', 'CHZ/USDT', 'OMG/USDT', 'BTT/USDT', 'IOST/USDT', 'ZIL/USDT']
+exchanges = ['binance','bitstamp', 'huobipro', 'okex', 'bitmex', 'bittrex', 'poloniex', 'kucoin', 'gateio', 'deribit', 'bybit', 'phemex', 'mxc', 'hitbtc', 'bibox', 'bitmax']
+coins = ['BTC/USDT', 'ETH/USDT']
 
 app = Flask(__name__)
 
