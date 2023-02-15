@@ -3,8 +3,8 @@ import os
 from flask import Flask, jsonify
 
 # Add your Binance API key and secret here
-binance_api_key = 'your_api_key'
-binance_secret = 'your_secret'
+binance_api_key = 'vpKO1DecEFexXzX5gsfG8WEmHuH5DPeV4lYqFKBJGwmjeVoWwXMZjU4UFcqQFaba'
+binance_secret = 'mnpTkA1KNYiDBpoUsiUjQGY3KUtPOxJHcad0aFVbvSF8h5imxhAaAcriP99oiMIi'
 
 exchanges = [{'name': 'binance', 'api_key': binance_api_key, 'secret': binance_secret}, 
              {'name': 'bitstamp'}]
