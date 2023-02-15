@@ -6,7 +6,7 @@ from flask import Flask, jsonify
 binance_api_key = 'vpKO1DecEFexXzX5gsfG8WEmHuH5DPeV4lYqFKBJGwmjeVoWwXMZjU4UFcqQFaba'
 binance_secret = 'mnpTkA1KNYiDBpoUsiUjQGY3KUtPOxJHcad0aFVbvSF8h5imxhAaAcriP99oiMIi'
 
-exchanges = [{'name': 'coinbase'}, 
+exchanges = [{'name': 'bitfinex'}, 
              {'name': 'bitstamp'}]
 coins = ['BTC/USDT', 'ETH/USDT']
 
