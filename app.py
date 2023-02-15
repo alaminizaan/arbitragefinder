@@ -19,7 +19,7 @@ def calculate_arbitrage_opportunity(exchange, coin_pair, fees):
 
     # Calculate transaction fees and trading fees
     transaction_fee = fees.get('transaction', 0.0)
-    trading_fee = (fees['maker', 0.0] + fees['taker', 0.0]) / 2
+    trading_fee = (fees['maker', 0.001] + fees['taker', 0.001]) / 2
     bid_price_with_fees = bid_price * (1 + trading_fee) + transaction_fee
     ask_price_with_fees = ask_price * (1 - trading_fee) - transaction_fee
 
